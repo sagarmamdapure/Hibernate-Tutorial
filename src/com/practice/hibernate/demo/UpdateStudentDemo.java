@@ -20,7 +20,6 @@ public class UpdateStudentDemo {
 
             Student student = currentSession.get(Student.class, studentId);
             student.setLastName("Mike");
-            //currentSession.save(student);
             System.out.println("Student with studentId=1" + student);
             currentSession.getTransaction().commit();
         }
